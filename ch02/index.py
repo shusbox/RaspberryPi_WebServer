@@ -1,5 +1,6 @@
 import pymysql
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
+from werkzeug.utils import redirect
 
 app = Flask(__name__)
 
@@ -7,16 +8,16 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/submit")
-def submit():
-    num = request.args.get("num")
-    conn = pymysql.connect(host='localhost', user='root', password='q1w2e3', db='study')
-    cur = conn.cursor()
-    cur.execute("INSERT INTO numcount(num) VALUES (%s)", (num,))
+@app.route("/submit", methods=["POST"])
+def save_db():
+    data = request.get_json()
+    print(data.get("value"))
+    conn = pymysql.connect(host="localhost", user="root", password="q1w2e3", db="study")
+    cur=conn.cursor()
+    cur.execute(f"insert into numcount(num) values({data.get('value')})")
     conn.commit()
-    cur.close()
     conn.close()
-    return render_template("index.html")
+    return redirect(url_for("index"))
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001)

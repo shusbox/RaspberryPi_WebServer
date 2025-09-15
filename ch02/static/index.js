@@ -8,6 +8,12 @@ count.addEventListener('click', () => {
     num.innerHTML = number;
 });
 
-submit.addEventListener('click', () => {
-    location.href = `http://127.0.0.1:5001/submit?num=${number}`;
+submit.addEventListener('click', async () => {
+    let res = await fetch("/submit", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({ value: number })
+    });
+    number = 0;
+    num.innerHTML = number;
 });
