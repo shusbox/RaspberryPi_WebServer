@@ -1,3 +1,31 @@
+from flask import Flask, request, render_template, jsonify
+import RPi.GPIO as GPIO
+from time import sleep
+
+app = Flask(__name__)
+
+# ---------------------
+# 서보 설정
+# ---------------------
+PIN = 16  # BOARD 기준 핀 번호
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(PIN, GPIO.OUT)
+servo = GPIO.PWM(PIN, 50)  # 50Hz
+servo.start(0)
+
+def setAngle(angle):
+    duty = 2.5 + 10 * angle / 180
+    print(f"Setting angle: {angle} -> Duty: {duty}")
+    servo.ChangeDutyCycle(duty)
+    sleep(0.5)  # 서보 이동 시간
+
+# ---------------------
+# 라우트
+# ---------------------
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 @app.route('/api/angle', methods=['POST'])
 def control_servo():
     data = request.get_json()

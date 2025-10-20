@@ -14,5 +14,27 @@
       <button class="setAngle"> Set Angle </button>
     </form>
   </main>
+
+    <script>
+    // 변경됨: jQuery 제거, 순수 JS 사용
+    document.querySelector('.setAngle').addEventListener('click', function(e){
+        e.preventDefault();  // 변경됨: 폼 제출 막아서 새로고침 방지
+        const angle = document.getElementById('angle-input').value;  // 변경됨: 순수 JS
+
+        if(angle >= 0 && angle <= 180) {
+            // 변경됨: fetch API 사용, $.ajax 제거
+            fetch('/api/angle', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ angle: angle })
+            })
+            .then(res => res.json())
+            .then(data => alert(data.message))
+            .catch(err => console.error(err));
+        } else {
+            alert("Please enter an angle between 0 and 180!");  // 변경됨: 알림 문구 개선
+        }
+    });
+  </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-var setAngle = document.querySelector('#setAngle')
+var setAngle = document.querySelector('.setAngle')
 
 setAngle.addEventListener('click', function(){
-    const angle = $('#angle').val();
+    const angle = $('#angle-input').val();
     if(angle >= 0 && angle <= 180) {
         $.ajax({
             type: 'POST',
