@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 import RPi.GPIO as GPIO
 from time import sleep
+import db_model
 
 app = Flask(__name__)
 
@@ -18,7 +19,6 @@ def setAngle(angle):
     print(f"Setting angle: {angle} -> Duty: {duty}")
     servo.ChangeDutyCycle(duty)
     sleep(0.5)  # 서보 이동 시간
-
 # ---------------------
 # 라우트
 # ---------------------
@@ -33,6 +33,7 @@ def control_servo():
     if angle is not None:
         try:
             setAngle(int(angle))
+            db_model.add_angle(int(angle))
             return jsonify({'message': f'Angle set to {angle}'})
         except Exception as e:
             return jsonify({'message': f'Error: {str(e)}'})
