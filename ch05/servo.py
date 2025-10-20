@@ -1,10 +1,3 @@
-import RPi.GPIO as GPIO
-from time import sleep
-
-pin = 16  # GPIO.BOARD 기준 핀 번호
-
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(pin, GPIO.OUT)
 servo = GPIO.PWM(pin, 50)  # 50Hz PWM
 
 def setAngle(angle):
