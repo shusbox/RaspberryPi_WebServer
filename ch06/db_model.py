@@ -16,12 +16,12 @@ def add_dht(dht):
         cursorclass=pymysql.cursors.DictCursor)
     try:
         with conn.cursor() as cursor:
-        sql = """
-        INSERT INTO dht11_data (temperature, humidity, create_at)
-        VALUES (%s, %s, %s)
-        """
-        now = datetime.now()
-        cursor.execute(sql, (dht['temperature'], dht['humidity'], now))
-        conn.commit()
+            sql = """
+            INSERT INTO dht11_data (temperature, humidity, create_at)
+            VALUES (%s, %s, %s)
+            """
+            now = datetime.now()
+            cursor.execute(sql, (dht['temperature'], dht['humidity'], now))
+            conn.commit()
     finally:
         conn.close()
