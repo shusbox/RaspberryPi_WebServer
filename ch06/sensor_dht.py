@@ -2,7 +2,7 @@ import time
 import adafruit_dht
 import board
 
-sensor = adafruit_dht.DHT11(board.D18)  # 기존과 동일
+sensor = adafruit_dht.DHT11(board.D14)  # 기존과 동일
 
 def get_now():
     for _ in range(3):  # 최대 3회 재시도
