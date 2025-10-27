@@ -14,16 +14,16 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1761559444,,"q"
 :wq
-|2,0,1761552838,,"wq"
+|2,0,1761556210,,"wq"
 :wq!
 |2,0,1761552594,,"wq!"
 :q!
 |2,0,1761552541,,"q!"
 :Wq
 |2,0,1761551744,,"Wq"
-:q
-|2,0,1761551147,,"q"
 :21
 |2,0,1760957336,,"21"
 :qw
@@ -67,238 +67,253 @@ $
 |3,0,26,0,1,0,1760957341,"w"
 
 # File marks:
-'0  1  0  ~/ch06/static/index.js
-|4,48,1,0,1761552838,"~/ch06/static/index.js"
-'1  1  0  ~/ch06/templates/index.html
-|4,49,1,0,1761552819,"~/ch06/templates/index.html"
-'2  1  0  ~/ch06/templates/index.js
-|4,50,1,0,1761552764,"~/ch06/templates/index.js"
-'3  2  11  ~/ch06/test1.py
-|4,51,2,11,1761552594,"~/ch06/test1.py"
-'4  5  55  ~/ch06/test.py
-|4,52,5,55,1761552541,"~/ch06/test.py"
-'5  1  0  ~/ch06/sensor_dht.py
-|4,53,1,0,1761552305,"~/ch06/sensor_dht.py"
-'6  1  0  ~/ch06/db_model.py
-|4,54,1,0,1761552289,"~/ch06/db_model.py"
-'7  1  0  ~/ch06/index.py
-|4,55,1,0,1761552280,"~/ch06/index.py"
-'8  13  7  ~/ch06/test.py
-|4,56,13,7,1761551746,"~/ch06/test.py"
-'9  13  7  ~/ch06/test.py
-|4,57,13,7,1761551746,"~/ch06/test.py"
+'0  1  14  ~/ch06/templates/index.html
+|4,48,1,14,1761559444,"~/ch06/templates/index.html"
+'1  1  0  ~/ch06/index.py
+|4,49,1,0,1761559436,"~/ch06/index.py"
+'2  53  68  ~/ch06/templates/index.html
+|4,50,53,68,1761556210,"~/ch06/templates/index.html"
+'3  53  68  ~/ch06/templates/index.html
+|4,51,53,68,1761556210,"~/ch06/templates/index.html"
+'4  53  54  ~/ch06/templates/index.html
+|4,52,53,54,1761556194,"~/ch06/templates/index.html"
+'5  53  54  ~/ch06/templates/index.html
+|4,53,53,54,1761556194,"~/ch06/templates/index.html"
+'6  54  43  ~/ch06/templates/index.html
+|4,54,54,43,1761555926,"~/ch06/templates/index.html"
+'7  53  43  ~/ch06/templates/index.html
+|4,55,53,43,1761555926,"~/ch06/templates/index.html"
+'8  54  43  ~/ch06/templates/index.html
+|4,56,54,43,1761555926,"~/ch06/templates/index.html"
+'9  53  43  ~/ch06/templates/index.html
+|4,57,53,43,1761555926,"~/ch06/templates/index.html"
 
 # Jumplist (newest first):
+-'  1  14  ~/ch06/templates/index.html
+|4,39,1,14,1761559444,"~/ch06/templates/index.html"
+-'  53  68  ~/ch06/templates/index.html
+|4,39,53,68,1761559441,"~/ch06/templates/index.html"
+-'  1  0  ~/ch06/index.py
+|4,39,1,0,1761559436,"~/ch06/index.py"
+-'  1  0  ~/ch06/index.py
+|4,39,1,0,1761559436,"~/ch06/index.py"
+-'  53  68  ~/ch06/templates/index.html
+|4,39,53,68,1761556210,"~/ch06/templates/index.html"
+-'  53  68  ~/ch06/templates/index.html
+|4,39,53,68,1761556210,"~/ch06/templates/index.html"
+-'  53  54  ~/ch06/templates/index.html
+|4,39,53,54,1761556194,"~/ch06/templates/index.html"
+-'  53  54  ~/ch06/templates/index.html
+|4,39,53,54,1761556194,"~/ch06/templates/index.html"
+-'  54  43  ~/ch06/templates/index.html
+|4,39,54,43,1761556163,"~/ch06/templates/index.html"
+-'  54  43  ~/ch06/templates/index.html
+|4,39,54,43,1761556163,"~/ch06/templates/index.html"
+-'  54  43  ~/ch06/templates/index.html
+|4,39,54,43,1761556163,"~/ch06/templates/index.html"
+-'  54  43  ~/ch06/templates/index.html
+|4,39,54,43,1761556163,"~/ch06/templates/index.html"
+-'  54  43  ~/ch06/templates/index.html
+|4,39,54,43,1761556163,"~/ch06/templates/index.html"
+-'  53  43  ~/ch06/templates/index.html
+|4,39,53,43,1761555926,"~/ch06/templates/index.html"
+-'  53  43  ~/ch06/templates/index.html
+|4,39,53,43,1761555926,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  48  6  ~/ch06/templates/index.html
+|4,39,48,6,1761555918,"~/ch06/templates/index.html"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
+-'  6  21  ~/ch06/static/index.js
+|4,39,6,21,1761555734,"~/ch06/static/index.js"
 -'  1  0  ~/ch06/static/index.js
-|4,39,1,0,1761552838,"~/ch06/static/index.js"
--'  1  0  ~/ch06/templates/index.html
-|4,39,1,0,1761552819,"~/ch06/templates/index.html"
--'  1  0  ~/ch06/templates/index.html
-|4,39,1,0,1761552819,"~/ch06/templates/index.html"
--'  1  0  ~/ch06/templates/index.js
-|4,39,1,0,1761552764,"~/ch06/templates/index.js"
--'  1  0  ~/ch06/templates/index.js
-|4,39,1,0,1761552764,"~/ch06/templates/index.js"
--'  1  0  ~/ch06/templates/index.js
-|4,39,1,0,1761552764,"~/ch06/templates/index.js"
--'  1  0  ~/ch06/templates/index.js
-|4,39,1,0,1761552764,"~/ch06/templates/index.js"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  2  11  ~/ch06/test1.py
-|4,39,2,11,1761552594,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  1  0  ~/ch06/test1.py
-|4,39,1,0,1761552565,"~/ch06/test1.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  5  55  ~/ch06/test.py
-|4,39,5,55,1761552541,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  13  7  ~/ch06/test.py
-|4,39,13,7,1761552470,"~/ch06/test.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/sensor_dht.py
-|4,39,1,0,1761552305,"~/ch06/sensor_dht.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
--'  1  0  ~/ch06/db_model.py
-|4,39,1,0,1761552289,"~/ch06/db_model.py"
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555710,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
+-'  1  0  ~/ch06/static/index.js
+|4,39,1,0,1761555672,"~/ch06/static/index.js"
 
 # History of marks within files (newest to oldest):
 
-> ~/ch06/static/index.js
-	*	1761552837	0
+> ~/ch06/templates/index.html
+	*	1761559443	0
+	"	1	14
+	^	53	69
+	.	53	68
+	+	49	5
+	+	54	43
+	+	53	68
+
+> ~/ch06/index.py
+	*	1761559436	0
 	"	1	0
 
-> ~/ch06/templates/index.html
-	*	1761552816	0
-	"	1	0
+> ~/ch06/static/index.js
+	*	1761555733	0
+	"	6	21
+	^	6	22
+	.	6	21
+	+	6	0
+	+	8	0
+	+	7	1
+	+	6	21
 
 > ~/ch06/templates/index.js
 	*	1761552759	0
@@ -344,10 +359,6 @@ $
 
 > ~/ch06/db_model.py
 	*	1761552288	0
-	"	1	0
-
-> ~/ch06/index.py
-	*	1761552278	0
 	"	1	0
 
 > ~/ch05/templates/index.html
