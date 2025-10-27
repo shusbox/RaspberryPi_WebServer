@@ -1,31 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Servo Motor Control</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    main {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 450px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      color: #667eea;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    form {
+      background: #f8f9ff;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: #4a5568;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      margin-bottom: 15px;
+    }
+
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    button {
+      width: 100%;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .setAngle {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .setAngle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    .setAngle:active {
+      transform: translateY(0);
+    }
+
+    .control-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    #turn {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+    }
+
+    #turn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(245, 87, 108, 0.4);
+    }
+
+    #stop {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: white;
+    }
+
+    #stop:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(79, 172, 254, 0.4);
+    }
+
+    #turn:active, #stop:active {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .control-buttons {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
-    <h1> Servo Motor Control </h1>
+    <h1>🎛️ Servo Motor Control</h1>
     <form>
-      <p> Enter Angle (0-180) </p>
-      <input type="number" id="angle-input">
-      <button class="setAngle"> Set Angle </button>
+      <p>Enter Angle (0-180)</p>
+      <input type="number" id="angle-input" min="0" max="180" placeholder="예: 90">
+      <button class="setAngle">Set Angle</button>
     </form>
-    <br>
-    <button id="turn"> 돌리기 </button>
-    <button id="stop"> 멈추기 </button>
+    
+    <div class="control-buttons">
+      <button id="turn">🔄 돌리기</button>
+      <button id="stop">⏹️ 멈추기</button>
+    </div>
   </main>
 
-    <script>
-    // 변경됨: jQuery 제거, 순수 JS 사용
+  <script>
     document.querySelector('.setAngle').addEventListener('click', function(e){
-        e.preventDefault();  // 변경됨: 폼 제출 막아서 새로고침 방지
-        const angle = document.getElementById('angle-input').value;  // 변경됨: 순수 JS
+        e.preventDefault();
+        const angle = document.getElementById('angle-input').value;
 
         if(angle >= 0 && angle <= 180) {
-            // 변경됨: fetch API 사용, $.ajax 제거
             fetch('/api/angle', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -35,8 +173,16 @@
             .then(data => alert(data.message))
             .catch(err => console.error(err));
         } else {
-            alert("Please enter an angle between 0 and 180!");  // 변경됨: 알림 문구 개선
+            alert("0에서 180 사이의 각도를 입력해주세요!");
         }
+    });
+    
+    document.getElementById('turn').addEventListener('click', () => {
+        fetch('/api/turn').then(res => res.json()).then(data => alert(data.message));
+    });
+    
+    document.getElementById('stop').addEventListener('click', () => {
+        fetch('/api/stop').then(res => res.json()).then(data => alert(data.message));
     });
   </script>
 </body>
