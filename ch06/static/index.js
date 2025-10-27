@@ -26,6 +26,8 @@ now.addEventListener('click', () => {
     div.appendChild(time);
     div.appendChild(temperature);
     div.appendChild(humidity);
+
+    table.appendChild(div);
   }).fail((result) => {
     console.log(result);
   });
