@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    h4, p {
+      margin: 8px;
+    }
+
+    button {
+      color: #FFFFFF;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+    }
+    #now { background-color: #4b7eff; }
+    #record { background-color: #0da755;}
+
+    #table {
+      width: 100%;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+    }
+
+    #col {
+      display: flex;
+      gap: 40px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      <button id="now"> now </button>
+      <button id="record"> record </button>
+    </div>
+    <div id="table">
+      <div id="col">
+        <h4> No. </h6>
+        <h4> date time </h4>
+        <h4> temperature(*C) </h4>
+        <h4> humidity(%) </h4>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
