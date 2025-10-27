@@ -15,6 +15,7 @@ def insertdb():
     temp, hum = sensor_dht.get_now()
     if temp is None or hum is None:
         return {"error": "sensor read failed"}, 503
+
     # DB에 삽입
     db_model.add(temp, hum)
 

@@ -18,7 +18,7 @@ def add_dht(dht):
     try:
         with conn.cursor() as cursor:
             sql = """
-                INSERT INTO dht11_data (temperature, humidity, create_at)
+                INSERT INTO record_dht (temperature, humidity, create_at)
                 VALUES (%s, %s, %s)
             """
             now = datetime.now()
@@ -41,7 +41,7 @@ def find_all():
     )
     try:
         with conn.cursor() as cursor:
-            sql = "SELECT * FROM dht11_data ORDER BY create_at DESC"
+            sql = "SELECT * FROM record_dht ORDER BY create_at DESC"
             cursor.execute(sql)
             rows = cursor.fetchall()
         return rows
