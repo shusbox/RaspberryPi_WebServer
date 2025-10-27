@@ -3,12 +3,12 @@ const record = document.getElementById("record");
 const table = document.getElementById("table");
 
 now.addEventListener('click', () => {
-  console.log("done");
   $.ajax({
     type: 'GET',
     url: '/api/now',
     contentType: 'application/json'
   }).done((result) => {
+    console.log("done");
     console.log(result);
 
     const div = document.createElement("div");
@@ -18,10 +18,11 @@ now.addEventListener('click', () => {
     const time = document.createElement("p");
     const temperature = document.createElement("p");
     const humidity = document.createElement("p");
+    
     no.textContent = "now";
-    time.textContent = "now";
-    temperature.textContent = result.temp;
-    humidity.textContent = result.hum;
+    time.textContent = result.create_at;
+    temperature.textContent = result.temperature;
+    humidity.textContent = result.humidity;
     
     div.appendChild(no);
     div.appendChild(time);
@@ -30,6 +31,7 @@ now.addEventListener('click', () => {
 
     table.appendChild(div);
   }).fail((result) => {
+    console.log("fail");
     console.log(result);
   });
 });
