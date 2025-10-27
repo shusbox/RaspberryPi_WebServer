@@ -25,9 +25,12 @@
       border-radius: 4px;
     }
 
-    #col {
+    .row {
       display: flex;
-      gap: 40px;
+    }
+
+    .row h4, .row p {
+      width: 200px;
     }
   </style>
 </head>
@@ -38,11 +41,17 @@
       <button id="record"> record </button>
     </div>
     <div id="table">
-      <div id="col">
+      <div class="row">
         <h4> No. </h6>
         <h4> date time </h4>
         <h4> temperature(*C) </h4>
         <h4> humidity(%) </h4>
+      </div>
+      <div class="row">
+        <p> now </p>
+        <p> now </p>
+        <p> 25*C </p>
+        <p> 48% </p>
       </div>
     </div>
   </main>
