@@ -14,6 +14,9 @@ def insertdb():
     # DHT 센서에서 현재 데이터 읽기
     temp, hum = sensor_dht.get_now()
 
+    if temp is None or hum is None:
+        return jsonify({"error": "Failed to read sensor data"}), 500
+
     # DB에 삽입
     db_model.add(temp, hum)
 
@@ -33,4 +36,4 @@ def selectAll():
     return jsonify(result)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", debug=True)
