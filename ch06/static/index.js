@@ -3,6 +3,7 @@ const record = document.getElementById("record");
 const table = document.getElementById("table");
 
 now.addEventListener('click', () => {
+  console.log("done");
   $.ajax({
     type: 'GET',
     url: '/api/now',
